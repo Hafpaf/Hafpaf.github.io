@@ -11,9 +11,12 @@
 
   <title>
     
-      About &middot; Hafnium
+      Google Search &middot; Hydeout
     
   </title>
+
+  
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="/assets/css/main.css" />
@@ -32,7 +35,7 @@
 </head>
 
 
-  <body class="page">
+  <body class="search">
 
     <div id="sidebar">
   <header>
@@ -44,10 +47,10 @@
   <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
 </svg></span>
         
-        Hafnium
+        Hydeout
       </a>
     </div>
-    <p class="lead">Some description</p>
+    <p class="lead">The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.</p>
   </header>
   <nav id="sidebar-nav-links">
   
@@ -67,23 +70,9 @@
 
   
     
-  
-
-  
+      <a class="page-link "
+          href="/about.html">About</a>
     
-      <a class="page-link  active"
-          href="/about/">About</a>
-    
-  
-
-  
-    
-  
-
-  
-    
-  
-
   
 
   
@@ -109,16 +98,26 @@
   
 
   
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
     
   
 
 
   
 
-
-  
-    
-  
 
   
     
@@ -145,6 +144,10 @@
     
       <a class="category-link "
           href="/category/markup.html">Markup</a>
+    
+  
+
+  
     
   
 
@@ -208,43 +211,48 @@
   
 
   
+    <a id="search-link"
+       class="icon"
+       title="Search" aria-label="Search"
+       href="/search.html">
+      <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg>
+    </a>
+  
 
   <!-- Optional additional links to insert for icons links -->
 </nav>
 
   <p>
   &copy; 2019.
-  <a href="/LICENSE">MIT License.</a>
+  <a href="/LICENSE.md">MIT License.</a>
 </p>
 
 </div>
 
     <main class="container">
       <header>
-  <h1 class="page-title">About</h1>
+  <h1 class="page-title"><label for="search-bar">Google Search</label></h1>
 </header>
 <div class="content">
-  <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it
-  for your own use upon downloading. Carry on!
-</p>
+  <form action="https://google.com/search" class="search-form">
+  <div class="search-row">
+    <input id="search-bar" type="search" name="q" />
 
-<p>To make pages show up in the sidebar, add <code class="highlighter-rouge">sidebar_link: true</code> to the front
-matter.</p>
+    
+    
+    
+    
+    
+    <input name="sitesearch" type="hidden"
+           value="localhost:4000/" />
 
-<p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
-
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
-
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
-
-
+    <input type="submit" value="Search" />
+  </div>
+</form>
 </div>
-
     </main>
 
     <!-- Optional footer content -->
