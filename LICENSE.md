@@ -1,4 +1,18 @@
-# Released under MIT License
+---
+layout: page
+title: "License"
+permalink: LICENSE.html
+
+tags:
+  - license
+last_modified_at: 2019-12-15
+---
+
+[Hydeout](https://github.com/fongandrew/hydeout) is a fork of the Jekyll theme. [Hyde](https://github.com/poole/hyde).
+
+This [version of Hydeout](https://github.com/jljouannic/hydeout) is updated to Jekyll 4.0.0 by [jljouannic](https://github.com/jljouannic).
+
+# Hydeout theme is released under MIT License
 
 Copyright (c) 2013 Mark Otto.
 
