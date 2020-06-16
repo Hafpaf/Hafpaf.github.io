@@ -4,7 +4,7 @@ This website contains only OpenPGP keys for automatic public key discovery in em
 The keys are located in the [.well-known/openpgpkey folder](/.well-known/openpgpkey/)
 
 ## Why use WKD?
-GPG encrypting emails, have for a long time served an awefull user experience. This is partly due to users having to manually find and import their recipients public GPG key. By using Web Key Directory for your domain, a user wanting to email you, could find the public key, and encrypt the email content automacicly by typing in the recipient address. A positive side effect of WKD is that it also decentralizes public key servers.
+GPG encrypting emails, have for a long time served an awefull user experience. This is partly due to users having to manually find and import their recipients public GPG key. By using Web Key Directory for your domain, a user wanting to email you, could find the public key, and encrypt the email content automacicly by typing in the recipient address in the email client \([see this example from intevation.de](https://files.intevation.de/users/aheinecke/wkd-autoencrypt.gif)\). A positive side effect of WKD is that it also decentralizes public key servers.
 
 Setting up WKD does not in it self require any software, since it is only a bunch of files that will be read by email clients. But that said, it does require a domain to receive the email on and some hosting solution that can serve the files. It is also possible to automate publishing of public keys with the [Web Key Service](https://wiki.gnupg.org/WKS).
 
