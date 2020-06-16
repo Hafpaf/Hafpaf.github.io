@@ -11,7 +11,7 @@ Setting up WKD does not in it self require any software, since it is only a bunc
 A list of Mail Clients, hosting solutions and hosting providers supporting WKD, can be found on [GNUPG's page about WKD](https://wiki.gnupg.org/WKD#Implementations)
 
 ## Setup
-Manual setup can be done by following [this guide](https://sizeof.cat/post/openpgp-web-key-directory-wkd-hosting/).
+Matt at mattrude.com have written a nice [setup guide about WKD](https://keyserver.mattrude.com/guides/web-key-directory/).
 
 I have found two ways to place the public key files:
 1. Place the public key in `<webRootFolder>/.well-known/openpgpkey/hu/`
@@ -19,9 +19,15 @@ I have found two ways to place the public key files:
 
 Approach number 2 is similar to the solution [https://keys.openpgp.org/](https://keys.openpgp.org/about/usage) uses, which allows other domains to let you handle WKD for them.
 
+If you are using Github pages to host the files, create an empty file called `.nojekyll`, located in the root directory of the repository. This is due to Jekyll using the .well-known directory when building the site.
 
 ## Test setup
 It is possible to test if WKD is setup correctly with this [WKD checker](https://metacode.biz/openpgp/web-key-directory) \(selfhosted docker setup can be found [here](https://gitlab.com/wiktor-k/wkd-checker)\).
+
+A public key can be discovered by using WKD, by using the following command
+```bash
+gpg -v --auto-key-locate clear,wkd,nodefault --locate-keys matt@mattrude.com
+```
 
 # Website frontpage
 Website frontpage template is [Under Construction](https://github.com/erengy/under-construction) licensed under MIT License.
